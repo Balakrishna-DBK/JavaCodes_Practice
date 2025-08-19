@@ -1,4 +1,4 @@
-package Allprogrames;
+package StringProg;
 
 public class SpecificWordCountInStr {
 

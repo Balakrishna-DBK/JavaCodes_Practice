@@ -1,9 +1,9 @@
-package Allprogrames;
+package StringProg;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class DuplicatesCount {
+public class DuplicatesCharCount {
 
 	public static void main(String[] args) {
 
@@ -18,8 +18,7 @@ public class DuplicatesCount {
 		for(Map.Entry<Character, Integer> entry:mp.entrySet()){
 			if(entry.getValue() > 1)
 			{
-				String repeated = String.valueOf(entry.getKey()).repeat(entry.getValue());
-				System.out.println(repeated+ " -- "+entry.getValue());
+				System.out.println(entry.getKey()+ " -- "+entry.getValue()); // if i "+entry.getValue" only dup will print..
 			}
 		}
 

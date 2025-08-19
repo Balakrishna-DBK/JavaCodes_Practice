@@ -18,10 +18,7 @@ public class AscendingOrder {
 		
 	} public static void type1() {
 		
-		// Integer[] input = {10, 20, 10, 45, 6};  
-	   // List<Integer> list = new ArrayList<>(Arrays.asList(input));
-		
-		
+	
 		 int[] input = {10, 60, 30, 40, 50};
 
 	        List<Integer> li = new ArrayList<>();
@@ -34,12 +31,6 @@ public class AscendingOrder {
 	        System.out.print(li);
 	        }
 		
-//		int[] input = {10, 20, 30};
-//		List<Integer> list = new ArrayList<>();
-//		for (int num : input) {
-//		    list.add(num);  // Auto-boxing from int to Integer
-//		}
-//		System.out.println(list.size());  // Output: 3
 	
 	public static void revDupSortAssending() {
 		
