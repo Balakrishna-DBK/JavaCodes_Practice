@@ -1,4 +1,4 @@
-package Allprogrames;
+package IntegerTypeCode;
 
 import java.util.Set;
 import java.util.TreeSet;

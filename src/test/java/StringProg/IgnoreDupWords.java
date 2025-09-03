@@ -9,15 +9,24 @@ public class IgnoreDupWords {
 
 		String input="java is java code is java code";
 
-		String[] enhanceIp = input.split("\\s+");
+		String[] words = input.split("\\s+");
 
-		Set<String> seen = new LinkedHashSet<>();
+		Set<String> st = new LinkedHashSet<>();
 
-		for(String str:enhanceIp)
-			seen.add(str);
+		for(String str:words)
+			st.add(str);
 
-		System.out.print(String.join(" ", seen));
+		System.out.print(String.join(" ", st));
 
 	}
 
 }
+
+//String.join(" ", st) →
+//👉 Takes all unique words from the set 'seen' and concatenates them into a single string, separated by spaces.
+
+//"String.join() is a static utility method in the String class.
+//It is used to concatenate multiple strings into a single string with a specified delimiter.
+//It works on arrays or any Iterable of CharSequence (like List, Set, etc.).
+//Unlike manual concatenation with +, String.join() is cleaner and avoids boilerplate code.
+//In my code, String.join(" ", st) is joining all unique words from the LinkedHashSet into one string, separated by spaces."

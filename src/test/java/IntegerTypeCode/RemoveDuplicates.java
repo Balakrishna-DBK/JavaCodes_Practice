@@ -1,4 +1,4 @@
-package Allprogrames;
+package IntegerTypeCode;
 
 import java.util.Scanner;
 import java.util.Set;

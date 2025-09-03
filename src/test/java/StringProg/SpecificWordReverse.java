@@ -1,28 +1,28 @@
 package StringProg;
 import java.util.*;
-import java.util.regex.Pattern;
+
 
 public class SpecificWordReverse {
 
 	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		String input = sc.nextLine();
-		
-		String ReqWordtoRev = sc.nextLine();
-		
-		if(!input.contains(ReqWordtoRev)) {
-			System.out.println("The word is not matching entered one");
-		}else {
-			String rev = new StringBuilder(ReqWordtoRev).reverse().toString();
-			
-			String output = input.replaceFirst(ReqWordtoRev, rev);
-			
-			System.out.println(output);
-			
+
+		String input = "First come first serve in java";
+
+		String[] words = input.split("\\s+");
+
+		StringBuilder sb = new StringBuilder();
+
+		for(int i=0; i<words.length; i++){
+			if(words[i].equalsIgnoreCase("java"))
+			{
+				sb.append(new StringBuilder(words[i]).reverse().toString());
+			} else
+			{
+				sb.append(words[i]);
+			}
+			sb.append(" ");
 		}
-		
+		System.out.println(sb.toString());
 
 	}
-
 }

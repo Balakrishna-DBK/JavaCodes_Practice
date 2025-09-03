@@ -1,0 +1,6 @@
+In String Builder where to use ".toString" and where not to use...
+
+..........“When printing, we don’t need to call .toString() explicitly 
+because System.out.println() internally calls it on the object.
+But if I want to use the final value as a String (for storing or further operations), 
+then I must explicitly call .toString().”

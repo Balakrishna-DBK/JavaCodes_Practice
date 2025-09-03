@@ -3,20 +3,20 @@ package StringProg;
 public class SentenseReverse {
 
 	public static void main(String[] args) {
-		
-		String input ="Iam going to office";
 
-	    String[] words=input.split("\\s+");
-	    StringBuilder sb = new StringBuilder();
+		String input = "Iam going to office";
 
-	    for(String word:words){
-	        
-	    	String rev = new StringBuilder(word).reverse().toString();
+		String[] words = input.split("\\s+");
 
-	        sb.append(rev).append(" ");
-	    }
-	    System.out.println(sb);
-
-	}
-
+		String rev = "";
+		for(String word:words){
+			
+			for(int i=word.length()-1; i>=0; i--){
+				rev+=(word.charAt(i));
+			}
+			rev+=" ";
+		} 
+		System.out.print(rev);
+	} 
+	
 }
