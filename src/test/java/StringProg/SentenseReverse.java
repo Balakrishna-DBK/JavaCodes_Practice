@@ -4,7 +4,7 @@ public class SentenseReverse {
 
 	public static void main(String[] args) {
 
-		String input = "Iam going to office";
+		String input = "Iam going to office";   //maI gniog ot eciffo 
 
 		String[] words = input.split("\\s+");
 

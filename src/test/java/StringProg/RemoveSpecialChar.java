@@ -6,9 +6,13 @@ public class RemoveSpecialChar {
 		
 	        String input ="BaL@@#Aa Kr&is123hNA!!$";
 
-	        String cleaned = input.replaceAll("[^a-zA-Z0-9]", ""); //This is called Regex... 
-
-	        System.out.print(cleaned);
+	        String[] words =input.split("\\s+");
+	        String result = "";
+	        for(String word:words) {
+	        	word=word.replaceAll("[^a-zA-Z]", "");
+	        	result+=word+" ";
+	        }
+	        System.out.println(result.toLowerCase());
 
 	}
 

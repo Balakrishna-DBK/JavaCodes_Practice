@@ -32,10 +32,15 @@ public class AlternateWordReverse {
 //		String rev = "";
 //		for(int j=words[i].length()-1; j>=0; j--){
 //			rev+=words[i].charAt(j);
-//		} sb.append(rev);
+//		} 
+//          sb.append(rev);
 //	} else{
 //		sb.append(words[i]);
 //	}
 //	sb.append(" "); 
 //}
 //System.out.print(sb);
+
+
+
+

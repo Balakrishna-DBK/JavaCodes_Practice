@@ -26,3 +26,18 @@ public class SpecificWordReverse {
 
 	}
 }
+
+//String input = "iam going to office";
+//String[] words = input.split("\\s+");
+//String rev=""; String result="";
+//
+//for(String word:words){
+
+//    if(word.equalsIgnoreCase("office")){
+//          for(int i=word.length()-1; i>=0; i--){
+//               rev+=word.charAt(i);
+//        } result+=rev+" ";
+//    }else
+//    result+=word+" ";
+//}
+//System.out.print(result);
