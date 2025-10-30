@@ -13,7 +13,7 @@ public class SentenseWordsCount {
 				+ "Thailand, Srilanka, Bangladesh and"
 				+ " I liked Thailand Food and I liked nature of Indonesia";
 		
-		String[] words = input.replaceAll("[^a-zA-Z ]", "").split("\\s+");
+		String[] words = input.replaceAll("[^a-zA-Z\\s]", "").split("\\s+");
 		
 		List<String> countries = Arrays.asList("India", "China", "Indonesia", "Thailand", "Srilanka","Bangladesh");
 		
@@ -27,7 +27,6 @@ public class SentenseWordsCount {
 		for(Map.Entry<String, Integer> entry: freqmp.entrySet())
 			System.out.println(entry.getKey()+"===>"+entry.getValue());
 			
-		
 	}
 
 }

@@ -32,5 +32,15 @@ public class StringRev {
 		}
 		System.out.println(rev);
 	}
+	public static void wordRevSame() {
+		
+		String str = "Hello Java Developer".toLowerCase();
+	     
+		    String[] words =str.split("\\s+");
+		   
+		        for(int i=words.length-1; i>=0; i--){        //developer java hello
+		           System.out.print(words[i]+" "); 
+		        }
+	}
 
 }

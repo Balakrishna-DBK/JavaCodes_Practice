@@ -21,5 +21,21 @@ public class RemoveDupWords {
 		}
 		System.out.println(result);
 	}
+         // 
+} 
+// Remove dup char and printing unique.......
 
-}
+//String input = "abcdba hvd hs".replaceAll(" ", "");         //a b c d h v s 
+//char[] words = input.toCharArray();
+//String result="";
+//for(int i=0; i<=words.length-1; i++){
+//
+//  boolean flag =false;
+//   for(int j=0; j<i; j++){
+//       if(words[i]==words[j]){
+//           flag=true;
+//           break;
+//       }
+//   }if(!flag)
+//       result+=words[i]+" ";
+//} System.out.print(result);

@@ -9,7 +9,7 @@ public class WordsCount2 {
 	public static void main(String[] args) {
 		String input = "India, China, Bengladesh , japan, India, Japan";
 		
-		String[] words = input.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
+		String[] words = input.replaceAll("[^a-zA-Z\\s]", "").toLowerCase().split("\\s+");
 		
 		Map<String, Integer> mp = new HashMap<>();
 		
